@@ -5,6 +5,8 @@
 
 Оригинальный проект: **[WarfaceBot Levak][wbl]**
 
+Связанный проект: **[Fan-Bot's][fanbots]**
+
 [my_vk]: https://vk.com/dlako
 [group_vk]: https://vk.com/fanbots_wf
 [wbl]: https://github.com/Levak/warfacebot
@@ -12,6 +14,7 @@
 [cygwin]: https://cygwin.com/install.html
 [releases]: https://github.com/Lako-FC/warfacebot_fb/releases/
 [releases_fanbots]: https://www.google.com/
+[fanbots]: https://www.google.com/
 
 ## Лицензия
 
