@@ -1,6 +1,11 @@
 # WarfaceBotFB
-Группа ВК: **[Fan-Bot's ● (Fun-Bot's for Warface][group_vk]**
+Я в ВК: **[Даниил Дилако][my_vk]**
 
+Группа ВК: **[Fan-Bot's ● (Fun-Bot's for Warface)][group_vk]**
+
+Оригинальный проект: **[WarfaceBot Levak][wbl]**
+
+[my_vk]: https://vk.com/dlako
 [group_vk]: https://vk.com/fanbots_wf
 [wbl]: https://github.com/Levak/warfacebot
 [wf_ru]: https://ru.warface.com/
@@ -15,8 +20,6 @@ that yields in the GNU world. Indeed, this program is distributed under the
 terms of AGPLv3. Please take the time to read and understand the file
 **LICENSE** shipped within this repository.
 
-## Подробная информация: **[WarfaceBot Levak][wbl]**
-
 ## Как использовать
 
 ### Вы должны иметь игровой аккаунт в Warface
@@ -26,7 +29,7 @@ terms of AGPLv3. Please take the time to read and understand the file
 3. Вы должны понимать, что вы можете получить блокировку на данный аккаунт.
 
 ### Запуск бота
-1. Скачайте последний релиз **Fan-Bot's** : **[Releases][releases_fanbots]** .
+1. Скачайте последний релиз **Fan-Bot's** : **[Releases][releases_fanbots]**
 2. Перекиньте папку 'Fan-Bot's' в удобное место.
 3. Запустите 'START.exe'.
 4. Выберите сервер.
