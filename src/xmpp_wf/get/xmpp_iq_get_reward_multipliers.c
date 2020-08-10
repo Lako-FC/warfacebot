@@ -60,7 +60,7 @@ static void xmpp_iq_get_reward_multipliers_cb(const char *msg,
           float sp_multiplier = get_info_float(data, "sp_multiplier='", "'", NULL);
           float crown_multiplier = get_info_float(data, "crown_multiplier='", "'", NULL);
 
-          xprintf("%s: x%.1f %s | x%.1f %s | x%.1f %s | x%.1f %s",
+          xprintf("%s: x%.1f %s | x%.1f %s | x%.1f %s | x%.1f %s \n<_________________________________________________________>",
                   LANG(console_multipliers),
                   money_multiplier, LANG(money_game_short),
                   exp_multiplier, LANG(experience_short),
