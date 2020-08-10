@@ -1,15 +1,5 @@
 # WarfaceBot [![Build Status](https://travis-ci.org/Levak/warfacebot.svg?branch=master)](https://travis-ci.org/Levak/warfacebot) [![Coverity](https://img.shields.io/coverity/scan/9461.svg)](https://scan.coverity.com/projects/levak-warfacebot)
-... **a headless XMPP client for Warface (FPS game).**
-
-## Why
-
-After my [analysis of Warface in-game protocol][1], I've decided to write an
-headless client that will perform various statistical tasks. While developing
-it, I've found it could be used for other means, such as **create solo
-games**, which could be the opportunity for legit players to face new
-difficulties as the official game doesn't have support for single player.
-
-[1]: https://stackedit.io/viewer#!provider=gist&gistId=b9a1852a0a17e334f041&filename=wfre
+**Modification of 'warfacebot levak' for Fan-Bot's.**
 
 ## License
 
@@ -40,30 +30,9 @@ shop actions are made using custom XMPP queries.
 
 It is composed of two parts, similary to the game:
 
- - **Launcher**: It is responsible to log you in to the
-   authentication server which will provide us a "session token". The launcher
-   is made seperate in order to be scriptable and customizable (for instance,
-   you can make it work for different Warface servers such as VN, RU, or
-   BR). There are several launchers:
-   + `wb.sh`: Bash launcher for GNU/Linux users;
-   + `wb_launcher.hta`: GUI launcher for Windows users;
-   + `wbd_launcher`: Bash launcher when warfacebot is compiled DBUS mode;
-   + `wbm_launcher`: Bash launcher for the DBUS manager;
  - **Client** - `wb` - The actual program. It uses the "session token" given
    by the launcher to login to the XMPP service. Once there, this program acts
    like the real game does.
-
-## Important notices
-
-This program lacks of several features that would make it totally
-undetectable. Here is the TODO list:
-
- - HWID is not implemented. Some servers ban/kick HWIDs that are not
-   valid. Use the CVar `game_hwid` on launch to change it;
- - Use a real XML parser (or use a XMPP library). Currently, every query is
-   hand-crafted due to historical testings. Besides the untrusty code,
-   everything seems to work flawlessly (until the day the server will start
-   sending some advanced XML I don't handle correctly).
 
 ## How to use
 
@@ -219,30 +188,6 @@ example of a valid config file (assuming `cvar_name` is a valid cvar):
           `./cfg/server/<server>.cfg` is used in order to determine the game
           version and the server host. If the game version changed, you need
           to update this file accordingly.
-
-#### How to use CVars
-
-CVars can be defined in 4 different ways:
-
- - From the default config file `wb.cfg`;
-
- - From a config file given at launch;
-   ```
-   $ ./wb.sh eu -f <config.cfg>
-   ```
-
- - From a variable defined at launch;
-   ```
-   $ ./wb.sh eu -d <cvar_name=value>
-   ```
-
- - From the readline prompt.
-   ```
-   $ ./wb.sh eu
-   [...]
-   CMD# cvar_name = value
-   cvar_name = value
-   ```
 
 #### Game-related variables
 
