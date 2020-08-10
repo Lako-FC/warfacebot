@@ -30,11 +30,13 @@
 
 int main(int argc, char *argv[])
 {
+	setlocale(0, "ru_RU.UTF-8");
+
     const char *exe_path = argv[0];
 
     cvar_init();
 
-    cvar_parse_file("wb.cfg");
+    cvar_parse_file("setting_bots.ini");
 
     if (cvar.g_language != NULL)
     {
@@ -55,11 +57,13 @@ int main(int argc, char *argv[])
 
     if (isatty(STDOUT_FILENO))
     {
-        xprintf(
+			xprintf(
             "\nWarfacebot Copyright (C) 2015-2020 Levak Borok\n"
             "This program comes with ABSOLUTELY NO WARRANTY.\n"
             "This is free software, and you are welcome to redistribute it\n"
-            "under certain conditions; see AGPLv3 Terms for details.\n\n");
+            "under certain conditions; see AGPLv3 Terms for details.\n"
+            "> > > > > > > > > > > > > > > > > > > > > > > > > > > >\n"
+            "Modified by Lako, 2020\n\n");
     }
 
     /* End of -- Legal Notices */
