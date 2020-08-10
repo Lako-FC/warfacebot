@@ -5,6 +5,7 @@ CFLAGS+= -Iinclude -Ithird_party -DZLIB
 LDLIBS+= -lz -lreadline
 LDLIBS_DEBUG+=
 DBGFLAGS= -O0 -ggdb3 -g -DDEBUG
+RELEASE= wb
 
 # Compile with TLS libraries
 # (disable if not needed for third-party XMPP server)
@@ -35,11 +36,10 @@ endif
 # If possible, suppress valgrind warning comming from OpenSSL
 VALGRIND_API= $(shell $(CC) -E -x c third_party/check_valgrind.c > /dev/null 2> /dev/null && echo '-DVALGRIND_API' || echo ' ')
 
-
 # Some OS don't provide standard strndup
 HAVE_STRNDUP= $(shell echo 'extern char*strndup(const char*,int);main(){strndup("",0);}' | $(CC) -x c -D_GNU_SOURCE -> /dev/null 2> /dev/null && rm -f a.exe a.out && echo '-DHAVE_STRNDUP' || echo ' ')
 
-all: wb
+all: $(RELEASE)
 
 options:
 	echo $(VALGRIND_API) $(HAVE_STRNDUP) > .opt
@@ -223,10 +223,10 @@ OBJ = \
 ./src/xmpp_wf/tools.o \
 
 
-wb: | options
-wb: $(OBJ)
+$(RELEASE): | options
+$(RELEASE): $(OBJ)
 
-wb:
+$(RELEASE):
 	$(LINK.o) $^ $(LOADLIBES) $(LDLIBS) -o $@
 
 debug-wb: CFLAGS+= $(DBGFLAGS)
