@@ -10,7 +10,6 @@
 
 Связанный проект: **[Fan-Bot's][fanbots]**
 
-[my_vk]: https://vk.com/dlako
 [group_vk]: https://vk.com/fanbots_wf
 [wbl]: https://github.com/Levak/warfacebot
 [wf_ru]: https://ru.warface.com/
