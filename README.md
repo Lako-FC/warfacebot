@@ -1,8 +1,7 @@
-# WarfaceBotFB 
+# WarfaceBotFB ![](https://img.shields.io/badge/PRICE-free-%231DC8EE)
 ![GitHub All Releases](https://img.shields.io/github/downloads/Lako-FC/warfacebot_fb/total?color=%231DC8EE&label=DOWNLOADS&logo=GitHub&logoColor=%231DC8EE&style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Lako-FC/warfacebot_fb?color=%231DC8EE&label=LAST%20COMMIT&style=flat-square)
 ![GitHub Release Date](https://img.shields.io/github/release-date/Lako-FC/warfacebot_fb?color=%231DC8EE&label=RELEASE%20DATE&style=flat-square)
-![](https://img.shields.io/badge/PRICE-free-%231DC8EE)
 
 Группа ВК: **[Fan-Bot's ● (Fun-Bot's for Warface)][group_vk]**
 
